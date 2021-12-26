@@ -48,44 +48,44 @@ function sceneMain() {
 }
 ```
 
-### API Documentation
-#### Project Configuration
-##### `haru.setConfiguration(key, value)`
+## API Documentation
+### Project Configuration
+#### `haru.setConfiguration(key, value)`
 
 Adds key-value pair to the project configuration.
 
 Returns `value`
 
-##### `haru.getConfiguration(key, value)`
+#### `haru.getConfiguration(key, value)`
 
 Gets key-value pair from the project configuration.
 
 Returns the value associated with key.
 
-#### characters
+### characters
 
-##### `haru.createCharacter(options)`
+#### `haru.createCharacter(options)`
 
 Creates character with traits set to `options`.
 
 Returns a Character ID that is used to represent this character uniquely throughout
 the game.
 
-#### Game logic
+### Game logic
 
-##### `haru.registerScene(name, callback)`
+#### `haru.registerScene(name, callback)`
 
 Registers a game scene and associates it with the `callback` function.
 
 Returns nothing.
 
-##### `haru.line(chr, content)`
+#### `haru.line(chr, content)`
 
 Make character `chr` speak `content`, if `chr = 0`, content is spoken by the aside.
 
 Returns nothing
 
-##### `haru.select(listOfChoices)`
+#### `haru.select(listOfChoices)`
 
 Present a list of choices to the user.
 
