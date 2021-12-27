@@ -6,15 +6,15 @@ Harulang is a simple scripting language for visual novels.
 
 ```
 config
-  resource-directory =  "/resources"
+  let resource-directory =  "/resources"
 end config
 character reimu
-  name = "Reimu Hakurei"
-  img = "/img/reimu"
+  let name = "Reimu Hakurei"
+  let img = "/img/reimu"
 end character
 character marisa
-  name = "Marisa Kirisame"
-  img = "/img/marisa"
+  let name = "Marisa Kirisame"
+  let img = "/img/marisa"
 end character
 let san = 6
 scene main
@@ -28,10 +28,10 @@ scene main
   end for
   select
     choice "Choice 1"
-      san = san - 1
+      let san = san - 1
     end choice
     choice "Choice 2"
-      san = san + 1
+      let san = san + 1
       jump scene1_1
     end choice
   end select
